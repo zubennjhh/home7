@@ -1,0 +1,23 @@
+{% include 'header.html' %}
+<center>
+    {% for i in object_list %}
+    <br>
+    <hr>
+<div class="card" style="width: 18rem;">
+
+  <div class="card-body">
+
+    <h3 class="card-title">{{i.title_text}}</h3>
+    <img src="{{i.image}}" alt="" width="200" height="300">
+    <h6 class="card-subtitle mb-2 text-muted">Дата опубликования новости: {{i.create_data}}</h6>
+    <h6 class="card-subtitle mb-2 text-muted">Тэги: {{i.tag}} звёзд</h6>
+    <a href="{{i.title_url}}">Подробнее</a>
+
+  </div>
+
+</div>
+    <br>
+    <hr>
+    {% endfor %}
+</center>
+{% include 'footer.html' %}

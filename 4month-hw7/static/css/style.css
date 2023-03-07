@@ -1,0 +1,18 @@
+body{
+    background: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1614390749_44-p-kniga-na-temnom-fone-56.jpg");
+}
+
+footer {
+  display: block;
+  text-align: center;
+  padding: 3px;
+  background-color: black;
+  color: black;
+}
+
+hr {
+    border: none; /* Убираем границу для браузера Firefox */
+    color: darkblue; /* Цвет линии для остальных браузеров */
+    background-color: darkblue; /* Цвет линии для браузера Firefox и Opera */
+    height: 12px; /* Толщина линии */
+   }

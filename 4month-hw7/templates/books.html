@@ -1,0 +1,25 @@
+{% include 'header.html' %}
+<center>
+    {% for i in object_list %}
+    <br><br>
+    <hr><hr>
+<div class="card" style="width: 18rem;">
+  <img src="{{books.image.url}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{i.title}}</h5>
+    <p class="card-text">{{i.description}}</p>
+     <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Действия
+  </button>
+  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+    <li><a class="dropdown-item active" href="/books/{{i.id}}">Узнать подробнее о книге</a></li>
+    <li><hr class="dropdown-divider"></li>
+  </ul>
+</div>
+  </div>
+  </div>
+  <br><br>
+  {% endfor %}
+</center>
+{% include 'footer.html' %}
